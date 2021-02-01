@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+    
+{% block content %}     
+        {% for post in posts %}
+            <div class="post">
+                <p>published: {{ post.published_date }}</p>
+                <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.item_name }}</a></h3>
+                <img src={{ post.photo.url }} width=200>
+                <p>{{ post.item_no|linebreaksbr }}
+                <p>{{ post.item_stock|linebreaksbr }}</p>
+
+            </div>
+        {% endfor %}
+{% endblock %}    
+    

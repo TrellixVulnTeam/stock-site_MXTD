@@ -6,6 +6,7 @@ from django.utils import timezone
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     item_name =  models.CharField(max_length=200)
+    photo = models.ImageField(upload_to='images/')
     item_no = models.CharField(max_length=200)
     item_stock =  models.IntegerField(default=0)
     created_date = models.DateTimeField(default=timezone.now)

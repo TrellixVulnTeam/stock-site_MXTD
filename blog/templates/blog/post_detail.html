@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h3>{{ post.item_name }}</h3>
+        <img src={{ post.photo.url }} width=200>
+        <p>{{ post.item_no|linebreaksbr }}
+        <p>{{ post.item_stock|linebreaksbr }}</p>
+    </div>
+{% endblock %}

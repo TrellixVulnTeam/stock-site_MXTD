@@ -1,0 +1,39 @@
+h1 a, h2 a ,p{
+    color: #01070C;
+    font-family: 'Oswald';
+}
+
+
+
+.page-header {
+    background-color: #919598;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+
+.post {
+    margin-left: 40px;
+    margin-bottom: 70px;
+    float: left;
+    font-size: 10pt;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #000000;
+}
+img {
+    width: 200px;
+    height: 215px;
+    margin-bottom:10px;
+  }
